@@ -117,7 +117,7 @@ Usuario.conta_usuarios()
 user.conta_usuarios()
 print(Usuario.nome_completo(user))
 """
-from passlib.hash import pbkdf2_sha256 as cryp
+#from passlib.hash import pbkdf2_sha256 as cryp
 
 class Lampada:
 
@@ -166,22 +166,24 @@ class Usuario:
         self.__nome = nome
         self.__sobrenome = sobrenome
         self.__email = email
-        self.__senha = cryp.hash(senha, rounds=20000, salt_size=16)
+        #self.__senha = cryp.hash(senha, rounds=20000, salt_size=16)
         Usuario.contador = self.__id
         print(f'Usuario criado {self.gera_usuario()}')
+        if nome != 'Marcio':
+            TypeError
     def nome_completo(self):
            #Retorna o nome completo do usuario
         return self.__nome + ' ' + self.__sobrenome
     
-    def checa_senha(self, senha):
-        if cryp.verify(senha, self.__senha):
-            return True
-        return False
+    #def checa_senha(self, senha):
+        #if cryp.verify(senha, self.__senha):
+            #return True
+        #return False
 
     def gera_usuario(self):
         return self.__email.split('@')[0]
 
-user = Usuario('Marcio', 'Messias', 'sdaffasda@GMAIL.COM', '123')
+user = Usuario('arcio', 'Messias', 'sdaffasda@GMAIL.COM', '123')
 
 
 

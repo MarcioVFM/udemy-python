@@ -4,10 +4,10 @@ Classes
 Em POO, classes nada mais sao do que modelos dos objetos do mundo real
 sendo representados computacionalmente
 
-Imagine que voce queira fazer um sistr3ema para automaticas o controle das
+Imagine que voce queira fazer um sistema para automatizar o controle das
 lâmpadas da sua casa
 
-Classes podem tconter:
+Classes podem conter:
     -Atributos: Representam as caracteristicas do objeto. Ou seja,
     pelos atributos conseguimos representar computacionalmente os
     estados do objeto. No caso cores, voltagem, luminosidade , etc.
