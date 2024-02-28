@@ -1,0 +1,9 @@
+"""Basicamente python tem tipagem de dados dinamica, que 
+quando voce coloca um valor em uma variavel, ele 
+automaticamente coloca o tipo daquela liguagem, 
+tipo int, float, string, boolean etc etc
+
+Outras linguagem como java e c, ela e estatica, voce 
+tem que declarar qual e o tipo da variavel antes de 
+colocar o valor
+"""
